@@ -1,0 +1,62 @@
+<!-- This is the main page template -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Page title -->
+    <title>Medical Appointments</title>
+    <!-- Include Bootstrap CSS for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Main container -->
+    <div class="container mt-5">
+        upload-project
+        <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid py-3">
+                <h1 class="display-4 fw-bold">Welcome to Bilaal's Medical Clinic</h1>
+                <p class="col-md-8 fs-4">
+                    Your health is our priority. At Bilaal's Medical Clinic, we provide professional 
+                    and compassionate healthcare services to our community. Our experienced team 
+                    is here to support your well-being.
+                </p>
+                <hr class="my-4">
+                <p>Book your appointment today and experience quality healthcare with a personal touch.</p>
+            </div>
+        </div>
+    
+
+        <!-- Page heading -->
+        <h1 class="text-center mb-4">Medical Appointment System</h1>
+        
+        main
+        <!-- Flash messages section -->
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+        upload-project
+
+                    <!-- Show success/error messages -->
+       main
+                    <div class="alert alert-success">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        
+        <!-- Navigation buttons -->
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="d-grid gap-3">
+        upload-project
+                    <a href="{{ url_for('book_appointment') }}" class="btn btn-primary btn-lg">Book Appointment</a>
+
+                    <!-- Button to book new appointment -->
+                    <a href="{{ url_for('book_appointment') }}" class="btn btn-primary btn-lg">Book Appointment</a>
+                    <!-- Button to view all appointments -->
+        main
+                    <a href="{{ url_for('view_appointments') }}" class="btn btn-secondary btn-lg">View Appointments</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
