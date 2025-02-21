@@ -27,7 +27,7 @@
                         <input type="time" name="time" class="form-control" required>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Doctor</label>
+                        <label class="form-label">Doctor</label>   
                         <select name="doctor" class="form-control" required>
                             <option value="" disabled selected>Select a doctor...</option>
                             <option value="Dr. Bilaal">Dr. Bilaal</option>
@@ -36,7 +36,7 @@
                         </select>
                         <small class="text-muted">Click to see available doctors</small>
                     </div> 
-                    <div class="d-grid gap-2">
+                    <div class="d-grid gap-2"> 
                         <button type="submit" class="btn btn-primary">Book Appointment</button>
                         <a href="{{ url_for('home') }}" class="btn btn-secondary">Back to Home</a>
                     </div>
