@@ -29,6 +29,7 @@
                     <div class="mb-3">
                         <label class="form-label">Doctor</label>
                         <select name="doctor" class="form-control" required>
+        upload-project
                             <option value="" disabled selected>Select a doctor...</option>
                             <option value="Dr. Bilaal">Dr. Bilaal</option>
                             <option value="Dr. Hanan">Dr. Hanan</option>
@@ -36,6 +37,13 @@
                         </select>
                         <small class="text-muted">Click to see available doctors</small>
                     </div> 
+
+                            <option value="Dr. Smith">Dr. Smith</option>
+                            <option value="Dr. Johnson">Dr. Johnson</option>
+                            <option value="Dr. Williams">Dr. Williams</option>
+                        </select>
+                    </div>
+        main
                     <div class="d-grid gap-2">
                         <button type="submit" class="btn btn-primary">Book Appointment</button>
                         <a href="{{ url_for('home') }}" class="btn btn-secondary">Back to Home</a>

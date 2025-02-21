@@ -10,6 +10,7 @@
 <body>
     <!-- Main container -->
     <div class="container mt-5">
+        upload-project
         <div class="p-5 mb-4 bg-light rounded-3">
             <div class="container-fluid py-3">
                 <h1 class="display-4 fw-bold">Welcome to Bilaal's Medical Clinic</h1>
@@ -23,10 +24,19 @@
             </div>
         </div>
     
+
+        <!-- Page heading -->
+        <h1 class="text-center mb-4">Medical Appointment System</h1>
+        
+        main
         <!-- Flash messages section -->
         {% with messages = get_flashed_messages() %}
             {% if messages %}
                 {% for message in messages %}
+        upload-project
+
+                    <!-- Show success/error messages -->
+       main
                     <div class="alert alert-success">{{ message }}</div>
                 {% endfor %}
             {% endif %}
@@ -36,7 +46,13 @@
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="d-grid gap-3">
+        upload-project
                     <a href="{{ url_for('book_appointment') }}" class="btn btn-primary btn-lg">Book Appointment</a>
+
+                    <!-- Button to book new appointment -->
+                    <a href="{{ url_for('book_appointment') }}" class="btn btn-primary btn-lg">Book Appointment</a>
+                    <!-- Button to view all appointments -->
+        main
                     <a href="{{ url_for('view_appointments') }}" class="btn btn-secondary btn-lg">View Appointments</a>
                 </div>
             </div>
